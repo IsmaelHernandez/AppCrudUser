@@ -35,7 +35,7 @@ function FormUser({getAllUser}) {
 
   return (
     <form  onSubmit={handleSubmit(submit)}>
-      <h2 className='form_title'>Create New Movies</h2>
+      <h2 className='form_title'>Create New User</h2>
       <ul className='form_list'>
         <li className='form_item'>
             <label htmlFor="email">Email:</label>

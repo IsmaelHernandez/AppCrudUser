@@ -6,6 +6,10 @@ body{
   margin: 0;
 }
 
+.text{
+  text-align: center;
+}
+
 ul{
   list-style: none;
   padding-left: 0;

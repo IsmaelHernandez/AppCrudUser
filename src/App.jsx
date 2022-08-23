@@ -26,7 +26,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Users Crud</h1>
       <div className='flex1'>
         <div className='form_container'>
           <FormUser getAllUser={getAllUser} />
