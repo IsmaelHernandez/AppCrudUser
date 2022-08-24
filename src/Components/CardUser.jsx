@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React from 'react'
 
-const CardUser = ({user, getAllUser}) => {
+const CardUser = ({user, getAllUser, setUpdateInfo}) => {
 
     //funcion delete //optenemos getall para recargar la pag
     const deleteUser = () => {
@@ -13,6 +13,11 @@ const CardUser = ({user, getAllUser}) => {
                 getAllUser()
             })
             .catch(err => console.log(err))
+    }
+
+    //funcion para obtener la inf 
+    const handleUpdateClick = () => {
+        setUpdateInfo(user)
     }
 
   return (
@@ -28,7 +33,7 @@ const CardUser = ({user, getAllUser}) => {
                 </ul>
                 <hr className='card_hr' />
                 <div className='card_footer'>
-                    <button className='card_btn'>Update</button>
+                    <button onClick={handleUpdateClick} className='card_btn'>Update</button>
                     <button onClick={deleteUser} className='card_btn'>Delete</button>
                 </div>
     </article>
